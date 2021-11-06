@@ -20,7 +20,7 @@
         name="viewport">
   <title>Портал государственных услуг Российской Федерации</title>
 
-  <meta content="Портал государственных услуг Российской Федерации2" name="description">
+  <meta content="Портал государственных услуг Российской Федерации" name="description">
   <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
   <meta content="Госуслуги" name="apple-mobile-web-app-title">
 
@@ -28,11 +28,60 @@
 </head>
 <body class="loading web-view-mode">
 <div class="container-app-loader" id="start-app-loader">
-  <div class="container-pulse pulse animated"></div>  
+  <div class="container-pulse pulse animated"></div>
+  <div class="container-app-logo">
+    <div class="app-logo"></div>
+  </div>
 </div>
 <div class="vaccine-result">
   <div class="flex-container ml-6 mr-6 justify-between align-items-center mt-52 mb-32">
-    <div class="ml-24">      
+    <div class="ml-24">
+      <a href="/" class="logo"></a>
+    </div>
+    <div onclick="APP.toogleLang()" class="translate-button flex-container mt-6 mr-24 align-items-center">
+      <div class="mr-8">
+        <div class="lang-image">
+          <div class="lang-en">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask20" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <circle cx="12" cy="12" r="11.6667" fill="#C4C4C4" stroke="#E1E1E1" stroke-width="0.666667"/>
+              </mask>
+              <g mask="url(#mask20)">
+                <path d="M0 -0.0185547H36V11.9994H0V-0.0185547Z" fill="#FAFCFF"/>
+                <path d="M0 12H36V24.0179H0V12Z" fill="#D52B1E"/>
+                <path d="M0 8.09485H36V16.207H0V8.09485Z" fill="#0039A6"/>
+                <path d="M-11.04 0.47998V23.52H35.04V0.47998H-11.04Z" fill="#00247D"/>
+                <path d="M-11.04 0.47998L35.04 23.52L-11.04 0.47998ZM35.04 0.47998L-11.04 23.52L35.04 0.47998Z"
+                      fill="black"/>
+                <path d="M35.04 0.47998L-11.04 23.52M-11.04 0.47998L35.04 23.52L-11.04 0.47998Z" stroke="white"
+                      stroke-width="4.608"/>
+                <path d="M-11.04 0.47998L35.04 23.52L-11.04 0.47998ZM35.04 0.47998L-11.04 23.52L35.04 0.47998Z"
+                      fill="black"/>
+                <path d="M35.04 0.47998L-11.04 23.52M-11.04 0.47998L35.04 23.52L-11.04 0.47998Z" stroke="#CF142B"
+                      stroke-width="3.072"/>
+                <path d="M12 0.47998V23.52V0.47998ZM-11.04 12H35.04H-11.04Z" fill="black"/>
+                <path d="M-11.04 12H35.04M12 0.47998V23.52V0.47998Z" stroke="white" stroke-width="7.68"/>
+                <path d="M12 0.47998V23.52V0.47998ZM-11.04 12H35.04H-11.04Z" fill="black"/>
+                <path d="M-11.04 12H35.04M12 0.47998V23.52V0.47998Z" stroke="#CF142B" stroke-width="4.608"/>
+              </g>
+            </svg>
+          </div>
+          <div class="lang-ru">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <circle cx="11.7499" cy="11.7499" r="11.4236" fill="#C4C4C4" stroke="#E1E1E1" stroke-width="0.652774"/>
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M0 -0.0184326H37.5V11.9995H0V-0.0184326Z" fill="white"/>
+                <path d="M0 12H37.5V24.0179H0V12Z" fill="#D52B1E"/>
+                <path d="M0 8.09485H37.5V16.207H0V8.09485Z" fill="#0039A6"/>
+                <circle cx="11.7499" cy="11.7499" r="11.2799" stroke="#E1E1E1" stroke-width="0.939995"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="lang"></div>
     </div>
   </div>
   <div>
@@ -143,7 +192,34 @@
           </g>
         </svg>
       </div>
-      
-    </div>  
+      <div class="status-container-inner">
+        <h4 class="title-h4 white status-title main-title"></h4>
+        <div class="status mt-12 text-plain small-text bold">
+          <span class="status-value hide not-found"></span>
+          <span class="status-value hide cert-name"></span>
+        </div>
+        <h4 class="title-h4 white status-title mt-12"><span class="num-symbol">№</span> <span class="unrz"></span></h4>
+      </div>
+    </div>
+
+    <div class="qr-container hide"></div>
+
+    <div class="qr-number hide"></div>
+
+    <div class="additional-info mt-20"></div>
+
+    <div class="person-data person-data-dates mt-12"></div>
+
+    <div class="person-data person-data-attrs mt-24"></div>
+
+    <div class="mt-24">
+      <a href="/" class="button close"></a>
+      <a download rel="noopener" target="_blank" class="button download hide"></a>
+    </div>
+
+  </div>
+</div>
+<script src="https://gu-st.ru/covid-web-st/static-pages-assets/js/helpers.js"></script>
+<script src="https://gu-st.ru/covid-web-st/static-pages-assets/covid-cert/main.js"></script>
 </body>
 </html>
