@@ -20,7 +20,7 @@
         name="viewport">
   <title>Портал государственных услуг Российской Федерации</title>
 
-  <meta content="Портал государственных услуг Российской Федерации" name="description">
+  <meta content="Портал государственных услуг Российской Федерации2" name="description">
   <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
   <meta content="Госуслуги" name="apple-mobile-web-app-title">
 
