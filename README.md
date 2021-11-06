@@ -28,10 +28,7 @@
 </head>
 <body class="loading web-view-mode">
 <div class="container-app-loader" id="start-app-loader">
-  <div class="container-pulse pulse animated"></div>
-  <div class="container-app-logo">
-    <div class="app-logo"></div>
-  </div>
+  <div class="container-pulse pulse animated"></div>  
 </div>
 <div class="vaccine-result">
   <div class="flex-container ml-6 mr-6 justify-between align-items-center mt-52 mb-32">
