@@ -143,34 +143,7 @@
           </g>
         </svg>
       </div>
-      <div class="status-container-inner">
-        <h4 class="title-h4 white status-title main-title"></h4>
-        <div class="status mt-12 text-plain small-text bold">
-          <span class="status-value hide not-found"></span>
-          <span class="status-value hide cert-name"></span>
-        </div>
-        <h4 class="title-h4 white status-title mt-12"><span class="num-symbol">№</span> <span class="unrz"></span></h4>
-      </div>
-    </div>
-
-    <div class="qr-container hide"></div>
-
-    <div class="qr-number hide"></div>
-
-    <div class="additional-info mt-20"></div>
-
-    <div class="person-data person-data-dates mt-12"></div>
-
-    <div class="person-data person-data-attrs mt-24"></div>
-
-    <div class="mt-24">
-      <a href="/" class="button close"></a>
-      <a download rel="noopener" target="_blank" class="button download hide"></a>
-    </div>
-
-  </div>
-</div>
-<script src="https://gu-st.ru/covid-web-st/static-pages-assets/js/helpers.js"></script>
-<script src="https://gu-st.ru/covid-web-st/static-pages-assets/covid-cert/main.js"></script>
+      
+    </div>  
 </body>
 </html>
